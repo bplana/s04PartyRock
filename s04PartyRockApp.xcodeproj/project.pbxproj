@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4FD7CDB71E4BB665006F142A /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD7CDB61E4BB665006F142A /* VideoVC.swift */; };
 		4FD7CDB91E4BB92A006F142A /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD7CDB81E4BB92A006F142A /* PartyCell.swift */; };
+		4FD7CDBB1E4BC721006F142A /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD7CDBA1E4BC721006F142A /* PartyRock.swift */; };
 		4FF9386A1E44030000D71C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF938691E44030000D71C2C /* AppDelegate.swift */; };
 		4FF9386C1E44030000D71C2C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9386B1E44030000D71C2C /* MainVC.swift */; };
 		4FF9386F1E44030000D71C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9386D1E44030000D71C2C /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		4FD7CDB61E4BB665006F142A /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		4FD7CDB81E4BB92A006F142A /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		4FD7CDBA1E4BC721006F142A /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 		4FF938661E44030000D71C2C /* s04PartyRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = s04PartyRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF938691E44030000D71C2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FF9386B1E44030000D71C2C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		4FF9387D1E440BF500D71C2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4FD7CDBA1E4BC721006F142A /* PartyRock.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				4FD7CDB71E4BB665006F142A /* VideoVC.swift in Sources */,
 				4FF9386C1E44030000D71C2C /* MainVC.swift in Sources */,
+				4FD7CDBB1E4BC721006F142A /* PartyRock.swift in Sources */,
 				4FD7CDB91E4BB92A006F142A /* PartyCell.swift in Sources */,
 				4FF9386A1E44030000D71C2C /* AppDelegate.swift in Sources */,
 			);

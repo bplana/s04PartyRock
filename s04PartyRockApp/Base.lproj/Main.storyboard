@@ -75,7 +75,7 @@
                                 <rect key="frame" x="0.0" y="217" width="375" height="450"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="da5-3F-uDi">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="89" id="da5-3F-uDi" customClass="PartyCell" customModule="s04PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="da5-3F-uDi" id="GhY-8y-AIc">
@@ -108,6 +108,10 @@
                                                 <constraint firstItem="YYx-sM-LL6" firstAttribute="centerY" secondItem="GhY-8y-AIc" secondAttribute="centerY" id="zeP-Ss-anl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="gec-tW-akU" id="gw8-7G-yVt"/>
+                                            <outlet property="videoTitle" destination="YYx-sM-LL6" id="SP8-LJ-ynJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -127,6 +131,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="kl1-wB-XCn" id="jbp-eC-ki2"/>
                         <segue destination="JBb-YL-YQg" kind="showDetail" identifier="VideoVC" id="kP6-zg-Eyf"/>
                     </connections>
                 </viewController>
@@ -153,14 +158,30 @@
                                     <constraint firstAttribute="height" constant="242" id="BZF-fT-MB8"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gju-pr-jkL">
+                                <rect key="frame" x="16" y="287" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KWO-ze-5me"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="gju-pr-jkL" firstAttribute="trailing" secondItem="yis-Iz-vH6" secondAttribute="trailingMargin" id="0lL-MA-BJq"/>
                             <constraint firstAttribute="trailing" secondItem="CeS-zc-Bzn" secondAttribute="trailing" id="Z0O-uZ-fkS"/>
                             <constraint firstItem="CeS-zc-Bzn" firstAttribute="top" secondItem="yis-Iz-vH6" secondAttribute="top" id="ccK-ue-AYD"/>
+                            <constraint firstItem="gju-pr-jkL" firstAttribute="top" secondItem="CeS-zc-Bzn" secondAttribute="bottom" constant="45" id="oCJ-7l-9h8"/>
                             <constraint firstItem="CeS-zc-Bzn" firstAttribute="leading" secondItem="yis-Iz-vH6" secondAttribute="leading" id="qYi-UU-Wbi"/>
+                            <constraint firstItem="gju-pr-jkL" firstAttribute="leading" secondItem="yis-Iz-vH6" secondAttribute="leadingMargin" id="xyg-Zg-W6o"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="gju-pr-jkL" id="tzA-86-Eer"/>
+                        <outlet property="webView" destination="CeS-zc-Bzn" id="1uK-FD-nb6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syN-yG-PEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
